@@ -1,20 +1,35 @@
-\documentclass{article}
+\documentclass[twocolumn,10pt]{asme2ej}
+\usepackage{epsfig}
+\usepackage[sorting=none]{biblatex}
+
+\bibliography{references}
+
 \title{Demograph}
-\author{Merlijn Boogerd}
+\author{
+    Merlijn Boogerd\\
+    email: mlboogerd@gmail.com
+}
 \date{March 2018}
+
 \begin{document}
 
-\maketitle Demograph
+% Statement of belief
+% Statement of principles
+% Manifesto
+% Life stance
 
-\include{abstract}
-\include{introduction}
+\maketitle
 
-\include{demograph}
-\include{monotonic}
-\include{infrastructure}
+\input{abstract}
+\input{introduction}
 
-\include{related}
-\include{conclusion}
-\include{references}
+\input{motivation}
+\input{demograph}
+\input{monotonic}
+\input{infrastructure}
+
+\input{related}
+\input{conclusion}
+\input{references}
 
 \end{document}
